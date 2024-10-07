@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leona García - Asesora de Comunicación</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #00BFFF; /* Color Telmex */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #FF6347; /* Color Izzi */
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 15px;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: #008000; /* Color Totalplay */
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="date"], input[type="tel"], input[type="file"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #00BFFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .service-header {
+            background-color: #333;
+            color: white;
+        }
+        .basic-package {
+            background-color: #e0f7fa;
+        }
+        .high-package {
+            background-color: #ffebee;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #FF6347;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <h1>Leona García</h1>
+    <h2>Asesora de Comunicación</h2>
+</header>
+
+<nav>
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#paquetes-internet">Paquetes de Internet</a>
+    <a href="#formulario">Registro de Clientes</a>
+</nav>
+
+<section id="sobre-mi">
+    <h3>Sobre mí</h3>
+    <p>Soy Leona García, asesora de comunicación con experiencia en telecomunicaciones. Mi enfoque es ayudar a empresas como Telmex, Telcel, Izzi y Totalplay a optimizar su comunicación y conectar mejor con sus clientes.</p>
+</section>
+
+<section id="paquetes-internet">
+    <h3>Paquetes de Solo Internet</h3>
+    <table>
+        <thead>
+            <tr class="service-header">
+                <th>Proveedor</th>
+                <th>Velocidad</th>
+                <th>Precio Mensual</th>
+                <th>Beneficios</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="basic-package">
+                <td>Telmex</td>
+                <td>50 Mbps</td>
+                <td>$349 MXN</td>
+                <td>Infinitum, Teléfono Fijo, Claro Video</td>
+            </tr>
+            <tr class="basic-package">
+                <td>Telmex</td>
+                <td>100 Mbps</td>
+                <td>$399 MXN</td>
+                <td>Infinitum, Teléfono Fijo, Claro Video</td>
+            </tr>
+            <tr class="high-package">
+                <td>Telmex</td>
+                <td>200 Mbps</td>
+                <td>$599 MXN</td>
+                <td>Infinitum, Teléfono Fijo, Claro Video</td>
+            </tr>
+            <tr class="basic-package">
+                <td>Izzi</td>
+                <td>50 Mbps</td>
+                <td>$350 MXN</td>
+                <td>Internet, Izzi Go</td>
+            </tr>
+            <tr class="basic-package">
+                <td>Izzi</td>
+                <td>100 Mbps</td>
+                <td>$500 MXN</td>
+                <td>Internet, Izzi Go</td>
+            </tr>
+            <tr class="high-package">
+                <td>Izzi</td>
+                <td>500 Mbps</td>
+                <td>$700 MXN</td>
+                <td>Internet, Izzi Go</td>
+            </tr>
+            <tr class="basic-package">
+                <td>Totalplay</td>
+                <td>100 Mbps</td>
+                <td>$549 MXN</td>
+                <td>Internet, TV en HD, Telefonía</td>
+            </tr>
+            <tr class="high-package">
+                <td>Totalplay</td>
+                <td>500 Mbps</td>
+                <td>$849 MXN</td>
+                <td>Internet, TV en HD, Telefonía</td>
+            </tr>
+            <tr class="high-package">
+                <td>Totalplay</td>
+                <td>1000 Mbps</td>
+                <td>$999 MXN</td>
+                <td>Internet, TV en HD, Telefonía</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section id="formulario">
+    <h3>Registro de Clientes</h3>
+    <form id="clientForm" onsubmit="enviarWhatsApp(event)">
+        <label for="nombre">Nombre Completo:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="calle">Calle:</label>
+        <input type="text" id="calle" name="calle" required>
+
+        <label for="numero">Número:</label>
+        <input type="text" id="numero" name="numero" required>
+
+        <label for="entre-calles">Entre Calles:</label>
+        <input type="text" id="entre-calles" name="entre-calles" required>
+
+        <label for="colonia">Colonia:</label>
+        <input type="text" id="colonia" name="colonia" required>
+
+        <label for="codigo-postal">Código Postal:</label>
+        <input type="text" id="codigo-postal" name="codigo-postal" required>
+
+        <label for="municipio">Municipio:</label>
+        <input type="text" id="municipio" name="municipio" required>
+
+        <label for="estado">Estado:</label>
+        <input type="text" id="estado" name="estado" required>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+
+        <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+        <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+
+        <label for="identificacion">Subir Identificación Oficial (INE, Pasaporte, etc.):</label>
+        <input type="file" id="identificacion" name="identificacion" accept="image/*, .pdf" required>
+
+        <input type="submit" value="Enviar Datos">
+    </form>
+</section>
+
+<section id="contacto">
+    <h3>Contacto</h3>
+    <p>Si deseas ponerte en contacto conmigo, puedes escribirme a: <a href="mailto:arsusa1989@gmail.com">arsusa1989@gmail.com</a></p>
+    <p>Visita mi página en <a href="https://www.facebook.com/leona.823988?mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></p>
+    <p>Envíame un mensaje por <a href="https://wa.me/5218683898471" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></p>
+</section>
+
+<footer>
+    <p>&copy; 2024 Leona García</
